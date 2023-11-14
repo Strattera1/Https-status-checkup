@@ -1,0 +1,98 @@
+[
+
+    {
+      "name": "Aftonbladet",
+      "url": "https://www.aftonbladet.se/",
+      "httpstatus": 1
+    },
+
+    {
+      "name": "Expressen",
+      "url": "https://www.expressen.se/",
+      "httpstatus": 2
+    },
+
+    {
+      "name": "Wikipedia",
+      "url": "https://www.wikipedia.org/"
+      
+    },
+
+    {
+      "name": "SvD",
+      "url": "https://www.svd.se/"
+      
+    },
+
+    {
+      "name": "DN",
+      "url": "https://www.dn.se/" 
+    },
+
+    {
+      "name": "BBC",
+      "url": "https://www.bbc.com/" 
+    },
+
+    {
+      "name": "CNN",
+      "url": "https://edition.cnn.com/" 
+    },
+
+    {
+      "name": "Washington Post",
+      "url": "https://www.washingtonpost.com/",
+      "httpstatus": 1
+    },
+    {
+      "name": "Der Spiegel",
+      "url": "https://www.spiegel.de/",
+      "httpstatus": 1
+    },
+    {
+      "name": "The Times",
+      "url": "https://www.thetimes.co.uk/",
+      "httpstatus": 1
+    },
+    {
+      "name": "Telegraph",
+      "url": "https://www.telegraph.co.uk/",
+      "httpstatus": 1
+    },
+    {
+      "name": "Sydvenskan",
+      "url": "https://www.sydsvenskan.se/",
+      "httpstatus": 1
+    },
+    {
+      "name": "VlT",
+      "url": "https://www.vlt.se/",
+      "httpstatus": 1
+    },
+
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/"
+      
+    },
+    {
+      "name": "Apple",
+      "url": "https://www.apple.com/"
+      
+    },
+    {
+      "name": "IBM",
+      "url": "https://www.ibm.com/uk-en"
+      
+    },
+    {
+      "name": "Xerox",
+      "url": "https://www.xerox.com/en-us"
+      
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/"
+    }
+
+]

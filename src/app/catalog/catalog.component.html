@@ -1,0 +1,30 @@
+
+  <div class="sideheader">
+
+      <div class="text-container">
+          <h1 style="color: white;">HTTPS Status on URL</h1>
+          <h3 style="color: white;" *ngIf="urlsData.length > 0">Last checkup: {{urlsData[0].updated | amDateFormat:'dddd, MMMM Do YYYY, h:mm:ss a'}}</h3>
+      </div>
+  </div>
+  <div class="container-fluid text-center">
+  <ul class="flex-list">
+      <li *ngFor="let item of urlsData" [ngClass]="[getStatusClass(item), isTimeOut ? 'status-null' : '']">
+          <div class="flex-container">
+              <div class="flex">
+                  <button button type="button" class="btn btn-light" (click)="goToLink(item.url!)" title="{{item.url}}">
+                      <div class="url">Link to webpage</div>
+                  </button>
+              </div>
+              <div class="flex">
+                  <div class="httpstatus">
+                      <span>Httpstatus:</span> {{item.httpstatus}}
+                      
+                  </div>
+              </div>
+          </div>
+      </li>
+  </ul>
+</div>
+
+
+<router-outlet></router-outlet>
