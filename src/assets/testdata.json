@@ -93,6 +93,13 @@
     {
       "name": "Github",
       "url": "https://github.com/"
+    },
+    {
+      "name": "Angular",
+      "url": "https://angular.io/"
+    },
+    {
+      "name": "The Economist",
+      "url": "https://www.economist.com/"
     }
-
 ]
