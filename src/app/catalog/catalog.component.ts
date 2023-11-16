@@ -4,6 +4,7 @@ import { Observable, catchError, empty, interval, timeInterval, timeout, timesta
 import { UrlService } from '../services/url.service';
 import { UrlData } from '../models/urldata';
 import { Tensor } from '@tensorflow/tfjs';
+import * as tf from '@tensorflow/tfjs';
 
 
 @Component({
@@ -20,8 +21,9 @@ export class CatalogComponent implements OnInit, OnDestroy {
   
 
 
-
+ 
   // Kom på hur jag ska använda mig av maskinläring i projektet. 
+  // problemet är att min json fil är för enkel för att göra maskinlärning i. 
 
       
 
@@ -181,7 +183,11 @@ export class CatalogComponent implements OnInit, OnDestroy {
       );
     });
   }
+
+  
 }
+
+
 
 
 

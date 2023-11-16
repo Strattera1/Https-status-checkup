@@ -5,7 +5,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../shared/material.module';
 import { CatalogService } from './catalog.service';
 import { FormsModule } from '@angular/forms';
-
+import { Tensor } from '@tensorflow/tfjs';
+import * as tf from '@tensorflow/tfjs';
 
 
 
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MaterialModule,
     FormsModule,
+    
     
     
   ],
