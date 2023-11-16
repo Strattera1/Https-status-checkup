@@ -3,6 +3,8 @@ import { CatalogService } from './catalog.service';
 import { Observable, catchError, empty, interval, timeInterval, timeout, timestamp } from 'rxjs';
 import { UrlService } from '../services/url.service';
 import { UrlData } from '../models/urldata';
+import { Tensor } from '@tensorflow/tfjs';
+
 
 @Component({
   selector: 'app-catalog',
@@ -15,11 +17,11 @@ export class CatalogComponent implements OnInit, OnDestroy {
   private interval: any;
   public isTimeOut: boolean = false;
   private timeout: any;
-
-
-
-
   
+
+
+
+  // Kom på hur jag ska använda mig av maskinläring i projektet. 
 
       
 
