@@ -49,8 +49,8 @@
   width: 12%;
   flex-direction: column;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   
 }
 
@@ -112,7 +112,7 @@
 }
 
 .status-null {
-  color: white;
+  color: grey;
   background-color: rgb(254, 204, 2);
 }
 

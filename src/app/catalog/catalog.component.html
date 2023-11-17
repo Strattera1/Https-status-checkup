@@ -11,7 +11,7 @@
       <li *ngFor="let item of urlsData" [ngClass]="[getStatusClass(item), isTimeOut ? 'status-null' : '']">
           <div class="flex-container">
               <div class="flex">
-                  <button button type="button" class="btn btn-light" (click)="goToLink(item.url!)" title="{{item.url}}">
+                  <button button type="button" class="btn  btn-outline-dark" (click)="goToLink(item.url!)" title="{{item.url}}">
                       <div class="url">Link to webpage</div>
                   </button>
               </div>

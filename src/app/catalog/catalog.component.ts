@@ -12,6 +12,8 @@ import * as tf from '@tensorflow/tfjs';
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.css']
 })
+
+
 export class CatalogComponent implements OnInit, OnDestroy {
   jsonData: any[] = [];
   urlsData: UrlData[] = [];
@@ -19,13 +21,15 @@ export class CatalogComponent implements OnInit, OnDestroy {
   public isTimeOut: boolean = false;
   private timeout: any;
   
+  //Machine learning part
+  // private model: tf.Sequential;
+
 
 
  
   // Kom på hur jag ska använda mig av maskinläring i projektet. 
   // problemet är att min json fil är för enkel för att göra maskinlärning i. 
-
-      
+  // Ska prova någonting. Ska använda mig av NN om det går med det jag har, 
 
     getStatusClass(item: any) {
       
@@ -70,7 +74,13 @@ export class CatalogComponent implements OnInit, OnDestroy {
       
     }
   
-  constructor (private catalogService : CatalogService, private urlservice: UrlService) {}
+  constructor (private catalogService : CatalogService, private urlservice: UrlService) {
+    //Comment out the machine learning part. 
+    // this.model = tf.sequential();
+    // this.model.add(tf.layers.dense({ units: 1, inputShape: [2], activation: 'sigmoid' }));
+    // this.model.compile({ optimizer: 'adam', loss: 'binaryCrossentropy', metrics: ['accuracy'] });
+  }
+  
 
   ngOnInit() {
     this.urlDataLoad();
@@ -79,9 +89,38 @@ export class CatalogComponent implements OnInit, OnDestroy {
       this.updatedHttpStatusCheck();
     }, 60000 );
 
-    
+    // this.trainMachineLearningModel();
+
     
   }
+  // Converting Json object to training for machine learning
+  // trainMachineLearningModel() {
+  //   const features = this.urlsData.map(item => ({
+  //     urlLength: item.url!.length,
+  //     hasKeyWord: item.url!.includes('News') ? 1:0,
+  //   }));
+
+  //   const labels = this.urlsData.map(item => (item.httpstatus == 200 ? 1:0));
+  //   const xs = tf.tensor2d(features.map(feature => [feature.urlLength, feature.hasKeyWord]));;
+  //   const ys = tf.tensor1d(labels);
+
+  //   this.model.fit(xs,ys, { epochs:10}).then(() => {
+  //     console.log('Machine learning model trained');
+  //   });
+  // }
+
+  // machineLearningPredictions(newUrl: string) {
+  //   const newFeatures = {
+  //     urlLength: newUrl.length,
+  //     hasKeyWord: newUrl.includes('News') ? 1 : 0,
+  //   };
+    
+  //   const predication = this.model.predict(tf.tensor2d([[newFeatures.urlLength, newFeatures.hasKeyWord]]));
+  //   const predicatedStatus = Array.isArray(predication) ? predication[0].dataSync()[0] > 0.5 : predication.dataSync()[0] > 0.5 ? 1 : 0;
+
+  //   console.log('Predicated HTTP Status:', predicatedStatus);
+  // };
+
   moreThanTwoMinutesPassed(updatedTime: Date, timeNow: Date) {
 
     if (updatedTime == null || timeNow == null)

@@ -1,14 +1,14 @@
 [
 
     {
-      "name": "Aftonbladet",
-      "url": "https://www.aftonbladet.se/",
+      "name": "Bootstrap",
+      "url": "https://getbootstrap.com/",
       "httpstatus": 1
     },
 
     {
-      "name": "Expressen",
-      "url": "https://www.expressen.se/",
+      "name": "W3schools",
+      "url": "https://www.w3schools.com/",
       "httpstatus": 2
     },
 
@@ -19,19 +19,19 @@
     },
 
     {
-      "name": "SvD",
-      "url": "https://www.svd.se/"
+      "name": "FZ",
+      "url": "https://www.fz.se/"
       
     },
 
     {
-      "name": "DN",
-      "url": "https://www.dn.se/" 
+      "name": "Mozilla",
+      "url": "https://developer.mozilla.org/en-US/" 
     },
 
     {
-      "name": "BBC",
-      "url": "https://www.bbc.com/" 
+      "name": "Kaggle",
+      "url": "https://www.kaggle.com/" 
     },
 
     {
@@ -40,8 +40,8 @@
     },
 
     {
-      "name": "Washington Post",
-      "url": "https://www.washingtonpost.com/",
+      "name": "Google",
+      "url": "https://www.google.com/",
       "httpstatus": 1
     },
     {
