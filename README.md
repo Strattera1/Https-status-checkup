@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
-#Focus of the project
+# Focus of the project
 
 The focus of the project is to check the HTTP status on websites. It will ask for the http status from websites and then display it on the app. 
 Depending on the HTTP status, it will show either green or red. Green is for that the website is up and red is for when the website is down or that you can't connect to it (404 and 401 error as an exempel).
