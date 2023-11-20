@@ -101,5 +101,16 @@
     {
       "name": "The Economist",
       "url": "https://www.economist.com/"
+    },
+
+    {
+      "name": "Stackblitz",
+      "url": "https://stackblitz.com/"
+    },
+
+    {
+      "name": "more CNN",
+      "url": "https://edition.cnn.com/2023/11/20/middleeast/gaza-tunnel-shaft-al-shifa-hospital-intl-hnk"
     }
-]
+
+  ]
