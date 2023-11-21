@@ -70,11 +70,16 @@ export class CatalogComponent implements OnInit, OnDestroy {
       
     }
   
-  constructor (private catalogService : CatalogService, private urlservice: UrlService, private loggerservice: LoggerService) {
+  constructor (private catalogService : CatalogService, private urlservice: UrlService, private loggerService: LoggerService) {
 
   }
   
-
+  logSomething() {
+    this.loggerService.log('This is a log message.');
+  }
+  saveLogsToFile() {
+    this.loggerService.saveLogsToFile();
+  }
   ngOnInit() {
     this.urlDataLoad();
 
