@@ -6,9 +6,10 @@ import { Injectable } from '@angular/core';
 export class LoggerService {
   logs: string[] = [];
 
-  log(message: string) {
-    const logEntry = `${ new Date().toISOString()}: ${message}`;
+  log(data: any) {
+    const logEntry = `${new Date().toISOString()}: ${this.stringifyData(data)}`;
     this.logs.push(logEntry);
+
     console.log(logEntry);
   }
   saveLogsToFile () {
@@ -24,5 +25,13 @@ export class LoggerService {
 
     document.body.removeChild(link);
   }
-  constructor() { }
+  private stringifyData(data: any): string {
+    if (typeof data === 'object') {
+      // If the data is an object or array, stringify it
+      return JSON.stringify(data, null, 2);
+    } else {
+      // If it's a simple type, just convert it to a string
+      return String(data);
+    }
+  }
 }

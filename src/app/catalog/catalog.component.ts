@@ -74,9 +74,11 @@ export class CatalogComponent implements OnInit, OnDestroy {
 
   }
   
-  logSomething() {
-    this.loggerService.log('This is a log message.');
+  logArray() {
+    const dataArray = this.urlsData;
+    this.loggerService.log(dataArray);
   }
+
   saveLogsToFile() {
     this.loggerService.saveLogsToFile();
   }
