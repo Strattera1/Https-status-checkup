@@ -1,0 +1,43 @@
+[
+
+    {
+      "name": "Bootstrap",
+      "url": "https://getbootstrap.com/",
+      "httpstatus": 1
+    },
+
+
+    {
+      "name": "CNN",
+      "url": "https://edition.cnn.com/" 
+    },
+
+    {
+      "name": "more CNN",
+      "url": "https://edition.cnn.com/2023/11/20/middleeast/gaza-tunnel-shaft-al-shifa-hospital-intl-hnk"
+    },
+    {
+      "name": "Bootstrap buttons",
+      "url": "https://getbootstrap.com/docs/5.3/components/buttons/"
+    },
+    {
+      "name": "httpstat 530",
+      "url": "https://httpstat.us/530"
+    },
+    {
+      "name": "httpstat 404",
+      "url": "https://httpstat.us/404"
+    },
+    {
+      "name": "Httpstat",
+      "url": "https://httpstat.us/"
+    },
+    {
+      "name": "httpbin bearer",
+      "url": "https://httpbin.org/bearer"
+    },
+    {
+      "name": "Httpbin undefiend",
+      "url": "https://httpbin.org/basic-auth/undefined/undefined"
+    }
+  ]
