@@ -3,8 +3,6 @@ import { CatalogService } from './catalog.service';
 import { Observable, catchError, empty, interval, timeInterval, timeout, timestamp } from 'rxjs';
 import { UrlService } from '../services/url.service';
 import { UrlData } from '../models/urldata';
-import { Tensor } from '@tensorflow/tfjs';
-import * as tf from '@tensorflow/tfjs';
 import { LoggerService } from '../logger/logger.service';
 
 
